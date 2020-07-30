@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: auto;
+    height: auto;
+    background-image: url(https://img.thuthuattinhoc.vn/uploads/2019/01/24/hinh-nen-cute-cho-dien-thoai_115831178.jpg);
+    background-size: cover;
+    font-family: 'arial', sans-sefil;
+}
+
+#album{
+    margin: 0px auto;
+    margin-top: 50px;
+    width: 950px;
+    height: auto;
+    background-color: #127d75;
+    border: #074d48 5px solid;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.dot{
+    margin: 0;
+    padding: 0;
+    float: left;
+    position: flex;
+    z-index: 3;
+    border-right:  #074d48 3px solid;
+}
+.dot i{
+    font-size: 30px;
+    margin-bottom: 31px;
+    margin-top: 20px;
+    color: rgb(153, 15, 38);
+}
+.header h1{
+    padding-top: 20px;
+    padding-right: 50px;
+    text-align: center;
+    font-size: 35px;
+}
+.slide{
+    margin-left: 50px;
+    position: flex;
+    z-index: 2;
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+}
+.slide:hover .dieuhuong, .slide:hover .dieuhuong2, .slide:hover .dieuhuong3, .slide:hover .dieuhuong4 {
+    display: block;
+    transition: 2s all ;
+    opacity: 0.75;
+}
+.dieuhuong, .dieuhuong2 ,.dieuhuong3, .dieuhuong4{
+    position: absolute;
+    top: 230px;
+    left: 80px;
+    color: black;
+    font-size: 50px;
+    display: none;
+    cursor: pointer;
+}
+.dieuhuong i:last-child, .dieuhuong2 i:last-child, .dieuhuong3 i:last-child, .dieuhuong4 i:last-child{
+    margin-left: 590px;
+}
+
+.ichigo, .umi, .sapa, .dazaifu{
+    position: relative;
+    overflow: hidden;
+    width: 825px;
+    position: relative;
+    transform: all 3s;
+}
+.chuyenslide, .chuyenslide2, .chuyenslide3, .chuyenslide4{
+    width: 99999px;
+    height: auto;
+}
+.chuyenslide img , .chuyenslide2 img, .chuyenslide3 img, .chuyenslide4 img{
+    width: 825px;
+    height: 500px;
+    float: left;
+    object-fit: contain ;
+    margin-top: 20px;
+}
+
+#footer {
+    width: auto;
+    height: 150px;
+    margin-top :30px ;
+    margin-bottom: 50px;
+    background-color: rgb(153, 15, 38);
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+}
+#footer a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+}

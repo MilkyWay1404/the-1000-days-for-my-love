@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" lang="vi">
+	<title>Sở thích</title>
+	<link rel="stylesheet" type="text/css" href="css-mylove2.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../Exweb/font-awesome/css/all.css">
+</head>
+<body>
+	<h1 style="font-size: 5.5rem;"> Sở thích của クマ và Mũm </h1>
+	<div id="table">
+			<p>
+				Tất cả những nhận xét trên đây chỉ mang tính chủ quan. Có gì sai sót xin được bổ sung từ phía các bạn...
+			</p>
+		<br>
+	</div>
+	<div class="container">
+		<table class="table" >
+			<tr>
+				<td>&nbsp;</td><td class="P"> クマ</td><td class="Đ"> Mũm</td>
+			</tr>
+			<tr>
+				<td class="thích">Thích</td><td>Thích khám phá những cái mới mẻ, thích hát, thích chơi guitar piano, thích học lập trình, thích game và gần đây là thích Mũm</td><td>Thích tiền, thích kiếm tiền, thích tiêu tiền. Ngoài ra còn thích KFC MCdonal 焼肉食べ放題, gần đây thì thích クマ</td>
+			</tr>
+			<tr>
+				<td class="ghét">Ghét </td><td>Ghét bị hiểu nhầm vu oan, ghét màu mè hoa lá cành, ghét văn vẻ dài dòng, ghét thù dai, ghét bảo thủ và còn...</td><td>Ghét nói dối và bị nó dối, và đặc biệt <b style="font-style: italic;color: #a21060;">GHÉT GIÁN</b></td>
+			</tr>
+		</table>
+		<h2>Câu hỏi của クマ, ráng trả lời cho đúng nhá mũm.</h2><br>
+		<div class="form-group">
+				<label for="name">Câu cho điểm nè! Tên ny bạn :</label>
+				<input type="text" class="form-control-sm" placeholder="Tên ny bạn" name="text_Q10" id="name" value="">
+				<button class="btn btn-primary" id="btn1" onclick="task('Phan')">Check</button>
+		</div>
+		<div class="form-group">
+				<label for="bthday">Sinh nhật ny bạn :</label>
+				<select class="form-control-sm" id="bthday">
+					<option>--date--</option>
+					<option>12/04</option>
+					<option>13/04</option>
+					<option>14/04</option>
+					<option>15/04</option>
+				</select>
+				<button class="btn btn-primary" id="btn2" onclick="">Check</button>
+		</div>
+		<div class="form-group">
+				<span>Bạn ấy thích màu gì ?</span>
+				<div class="custom-control custom-radio custom-control-inline">
+					<input type="radio" class="custom-control-input" id="customRadio" name="example" value="customEx">
+					<label class="custom-control-label" for="customRadio" style="color:blueviolet">Tím</label>
+				</div>
+				<div class="custom-control custom-radio custom-control-inline">
+					<input type="radio" class="custom-control-input" id="customRadio2" name="example" value="customEx">
+					<label class="custom-control-label" for="customRadio2" style="color:rgb(0, 162, 255)">Xanh Trời</label>
+				</div>
+				<div class="custom-control custom-radio custom-control-inline">
+					<input type="radio" class="custom-control-input" id="customRadio3" name="example" value="customEx">
+					<label class="custom-control-label" for="customRadio3" style="color:red">Đỏ</label>
+				</div>
+				<div class="custom-control custom-radio custom-control-inline">
+					<input type="radio" class="custom-control-input" id="customRadio4" name="example" value="customEx">
+					<label class="custom-control-label" for="customRadio4" style="color:black">Đen</label>
+				<button class="btn btn-primary" id="btn3" onclick="">Check</button>
+				</div>
+		</div>
+		<div class="form-group">
+				<div class="img-question" style="margin-top:2rem;">
+					<span style="margin-bottom:1rem;">Món ăn ưu thích của bạn ấy：</span>
+					<div class="row">
+						<div class="col-3">
+							<img src="https://vcdn-ngoisao.vnecdn.net/2018/11/26/46499074-192346168374169-23848-3862-1771-1543220954.jpg" alt="Đậu phụ nhồi thịt" title="Đậu phụ nhồi thịt" class="img-rounder img-responsive" id="img1" >
+					</div>
+					<div class="col-3">
+						<img src="https://wikiohana.net/wp-content/uploads/2018/12/hoan-thanh-mon-ca-thu-sot-ca-chua.jpg" alt="Cá sốt cà chua" title="Cá sốt cà chua" class="img-rounder img-responsive" id="img2">
+					</div>
+					<div class="col-3">
+						<img src="https://img-global.cpcdn.com/recipes/b319eda997b59f2c/751x532cq70/tr%E1%BB%A9ng-ran-c%E1%BB%91m-d%E1%BA%ADu%F0%9F%8D%BD-recipe-main-photo.jpg" alt="Trứng rán" title="Trứng rán" id="img3" class="img-rounder img-responsive">
+					</div>
+					<div class="col-3">
+						<img src="https://cdn.cet.edu.vn/wp-content/uploads/2018/03/canh-bi-do-bo-duong.jpg" alt="Canh xương bí dỏ" title="Canh xương bí đỏ" class="img-rounder img-responsive" id="img4">
+					</div>
+				</div>
+				<br>
+				<button class="btn btn-primary" id="btn4" onclick="task()">Check</button>
+			</div>	
+		</div>
+		<div class="form-group">
+			<span>Quê bạn ấy ở đâu (x2 điểm đấy nha) :</span>
+			<label for="text-1">Tỉnh</label><input type="text" class="form-control-sm" id="text-1" >
+			<label for="text-2">Huyện<input type="text" class="form-control-sm" id="text-2"></label>
+			<label for="text-3">Xã<input type="text" class="form-control-sm" id="text-3"></label>
+			<button class="btn btn-primary" id="btn5" onclick="">Check</button>
+		</div>
+		<form action="action_page.php" method="POST" name="form_1">
+			<div class="form-group">
+			  <label for="comment">Còn Mũm muốn hỏi anh gì thì comment phía dưới nha!</label>
+			  <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+			</div>
+			<button type="submit" class="btn btn-primary">Gửi tới クマ</button>
+		</form>
+	</div>
+	<div id="footer">
+		<p>
+			<a href="mylove.html">Trang chủ</a><br>
+			<b style="color: whitesmoke;">Created by Milky Way @2019</b>
+		</p>
+		<label> <i class="fab fa-facebook-square"></i> Facebook : <a href="#">Phan Hoang</a></label><br>
+		<label> <i class="fas fa-at"></i> Email :<a href="hhphanhd@mail.com"> hhphanhd@gmail.com</a></label>
+	</div>
+	<script src="../love/mylove.js"></script>
+	<script src="../Exweb/font-awesome/js/all.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

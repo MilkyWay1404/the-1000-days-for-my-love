@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    background-image: url(https://img.thuthuattinhoc.vn/uploads/2019/01/24/hinh-nen-cute-cho-dien-thoai_115831178.jpg);
+    background-size: cover;
+    font-family: 'arial', sans-sefil;
+}
+#top a{
+    text-decoration: none;
+}
+#top h1{
+    text-align: center;
+    font-family: "Dancing Scrip", cursive;
+    font-weight: bold;
+    color:  #d81b39;
+    font-size: 80px; 
+    animation: tittle-in 1.5s ease-in-out;
+    animation-fill-mode: both;
+    background-color: #f8bbc2;
+}
+.container-fluid{
+    background-color: #f8bbc2;
+    margin-top: -1rem;
+}
+.nav-item{
+    padding-top: 2rem;
+    padding-left: 10rem;
+    font-size: 1.5rem;  
+}
+.nav-item ul li a:hover{
+    cursor: pointer;
+}
+.tab-content{
+    padding: 6.5rem;
+    color: rgb(99, 56, 76);
+}
+.tab-content .ct1{
+    padding-left: 10px;
+    font-size: 20px;
+}
+.question {
+    cursor: pointer;
+    background-color: salmon;
+    font-size: large;
+    border-radius : 10px;
+    transition: ease-out .5s;
+}
+.question:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10px rgb(7, 7, 7);
+}
+
+.image img{
+    object-fit: cover;
+    margin-bottom: 15px;
+    text-align: center;
+    box-shadow: 0 5px 10px dimgray;
+}
+.check{
+    text-align: center;
+    border: 4px goldenrod solid;
+    border-radius: 100px;
+    background-color: gold;
+    color: rgb(185, 0, 50);
+    font-size: large;
+    font-weight: bold;
+    width: 240px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 40%;
+    position: relative;
+    display: inline-block;
+}
+.check::after{
+    content: "";
+    background-color: gold;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 100px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .7s;
+}
+.check:hover::after{
+    transform: scaleX(1.4) scaleY(3);
+    opacity: 0;
+}
+.check:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+.check:visited{
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+/*img:hover{
+    animation: zoom 1.5s forwards;
+}
+@-webkit-keyframes zoom{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(2.5);
+    }
+}*/
+#footer {
+    margin-top :30px ;
+    background-color: rgb(153, 15, 38);
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+}
+#footer a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+@keyframes tittle-in{
+    from{
+        transform: translateY(-15px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes menu-in{
+    from{
+        transform: translateZ(-10px);
+        opacity: 0;
+    }
+    to{
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
